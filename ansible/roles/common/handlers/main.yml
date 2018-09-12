@@ -1,0 +1,9 @@
+# Common Handlers
+---
+
+- name: restart awslogs
+  become: true
+  service:
+    name: awslogs
+    state: restarted
+    enabled: yes
